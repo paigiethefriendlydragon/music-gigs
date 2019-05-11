@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
-  root 'homes#index'
+  root 'gig#index'
   devise_for :users
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  resources :gig, only: [:index]
+  resources :users, only: [:index, :new, :show, :create]
+
+  namespace :api do
+        namespace :v1 do
+            resources :users, only: [:index, :show, :new, :create]
+        end
+    end
 end

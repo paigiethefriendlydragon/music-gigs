@@ -1,0 +1,19 @@
+h1{
+  font-family: 'Rajdhani', sans-serif;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 9rem;
+}
+body {
+  background-image: url(https://img.theculturetrip.com/768x432/wp-content/uploads/2018/02/36407068135_784f367b37_k.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.top-bar{
+  background-color: #3973B1;
+}
+
+.top-bar-section ul li {
+  background-color: #3973B1;
+
+}
