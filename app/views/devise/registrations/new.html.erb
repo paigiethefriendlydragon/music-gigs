@@ -4,6 +4,62 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name, autofocus: true %>
+  </div>
+
+  <div class="field">
+     <%= f.label :last_name %><br />
+     <%= f.text_field :last_name, autofocus: true %>
+   </div>
+
+   <div class="field">
+     <%= f.label :description %><br />
+     <%= f.text_field :description, autofocus: true %>
+   </div>
+
+   <div class="field">
+     <%= f.label :city %><br />
+     <%= f.text_field :city, autofocus: true %>
+   </div>
+
+   <div class="field">
+     <%= f.label :state %><br />
+     <%= f.text_field :state, autofocus: true %>
+   </div>
+
+   <div class="field">
+     <%= f.label :zip %><br />
+     <%= f.text_field :zip, autofocus: true %>
+   </div>
+
+  <div class="field">
+    <%= f.label :soundcloud_link %><br />
+    <%= f.text_field :soundcloud_link, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :recordings_link %><br />
+    <%= f.text_field :recordings_link, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rate_per_hour %><br />
+    <%= f.text_field :rate_per_hour, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rate_per_gig %><br />
+    <%= f.text_field :rate_per_gig, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :profile_photo %><br />
+    <%= f.file_field :profile_photo, autofocus: true %>
+  </div>
+
+
+  <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
