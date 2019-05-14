@@ -9,6 +9,7 @@ const MusicianListTile = (props) => {
           <p>{props.gig_rate}</p>
           <p>{props.city}</p>
           <p>{props.state}</p>
+          <p>{props.pic}</p>
       </div>
     </div>
   )
