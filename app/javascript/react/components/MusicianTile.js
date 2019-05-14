@@ -3,25 +3,27 @@ import React, { Component } from 'react'
 const MusicianTile = (props) => {
   return(
     <div>
-        <div id="name">
-          <h2>{props.first_name} {props.last_name} </h2>
+        <div id="pic" className="">
+          <img src= {props.pic}/>
         </div>
-        <div id="description">
+        <div id="name" className="name-container">
+          <p>{props.first_name} {props.last_name} </p>
+        </div>
+        <div id="description" className="description-container">
           <p>{props.description}</p>
         </div>
-        <div id="rate">
+        <div id="rate" className="rate-container">
           <p>{props.rate}</p>
         </div>
-        <div id="gigRate">
+        <div id="gigRate" className="rate-container">
           <p>{props.gigRate}</p>
         </div>
-        <div id="youtube">
+        <div id="youtube" className="link-container">
           <p>{props.youtube}</p>
         </div>
-        <div id="soundcloud">
+        <div id="soundcloud" className="link-container">
           <p>{props.soundcloud}</p>
         </div>
-
     </div>
   )
 }
