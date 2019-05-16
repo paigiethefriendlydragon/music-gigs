@@ -1,101 +1,27 @@
 <h1> Gig </h1>
 <h3>Search Your Musician By!</h3>
 <div class="menu">
+  <ul class="main-navigation">
+    <li class="type"><a href="#">Instrument</a></li>
+      <% @instrument_list.each do |instrument, hash_value| %>
+      <li class='inner-type'><a href="#"><%=instrument%></a>
+      </li>
 
 
-<ul class="main-navigation">
-  <li><a href="#">Instrument</a>
-    <ul>
-      <li><a href="#">Brass</a>
-        <ul>
-            <% @brass_menu.each do |instrument| %>
-              <li><%=link_to instrument %></li>
+      <ul>
+          <ul>
+            <% hash_value.each do |instrument| %>
+            <li><%=link_to instrument %></li>
             <%end%>
-        </ul>
-      </li>
-      <li><a href="#">Keyboard</a>
-        <ul>
-          <% @keyboard_menu.each do |instrument| %>
-          <li><%=link_to instrument %></li>
-          <%end%>
-        </ul>
-      </li>
-      <li><a href="#">Orchestral Strings</a>
-        <ul>
-          <% @orchestral_strings_menu.each do |instrument| %>
-          <li><%=link_to instrument %></li>
-          <%end%>
-        </ul>
-      </li>
-      <li><a href="#">Guitar Family</a>
-        <ul>
-          <% @guitar_family_menu.each do |instrument| %>
-          <li><%=link_to instrument %></li>
-          <%end%>
-        </ul>
-      </li>
-      <li><a href="#">Woodwinds</a>
-        <ul>
-          <% @woodwinds_menu.each do |instrument| %>
-          <li><%=link_to instrument %></li>
-          <%end%>
-        </ul>
-      </li>
-      <li><a href="#">Orchestral Strings</a>
-        <ul>
-          <% @orchestral_strings_menu.each do |instrument| %>
-          <li><%=link_to instrument %></li>
-          <%end%>
-        </ul>
-      </li>
-      <li><a href="#">Percussion</a>
-        <ul>
-          <% @percussion_menu.each do |instrument| %>
-          <li><%=link_to instrument %></li>
-          <%end%>
-        </ul>
-      </li>
-    </ul>
-  </li>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </li>
-
-
-
-
-
-
-
-
-  <li><a href="#">WordPress Development</a>
-    <ul>
-      <li><a href="#">Themes</a></li>
-      <li><a href="#">Plugins</a></li>
-      <li><a href="#">Custom Post Types</a>
-        <ul>
-          <li><a href="#">Portfolios</a></li>
-          <li><a href="#">Testimonials</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Options</a></li>
-    </ul>  </li>
-  <li><a href="#">About Us</a></li>
+          </ul>
+<%end%>
 </ul>
-</div>
+
+
+
+<!-- </ul>
+</div> -->
 
 
 
