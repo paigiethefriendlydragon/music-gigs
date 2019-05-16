@@ -29,3 +29,6 @@ yarn-debug.log*
 .yarn-integrity
 coverage/*
 /public/uploads
+/app/assets/images
+/app/assets/comments.txt
+/app/assets/javascripts/index.js
