@@ -1,9 +1,70 @@
+.menu{
+    margin-left: 20rem;
+    margin-right: 5rem;
+}
+.main-navigation ul{
+text-align: center;
+align-items: center;
+margin-left:auto;
+margin-right: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-left:auto;
+  margin-right: auto;
+  background: #1bc2a2;
+}
+
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+  background: #1bc2a2;
+}
+
+li ul { display: none; }
+
+ul li a {
+  display: block;
+  padding: 2em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+}
+
+ul li a:hover { background: #2c3e50; }
+
+li:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+li:hover li { float: none; }
+
+li:hover a { background: #1bc2a2; }
+
+li:hover li a:hover { background: #2c3e50; }
+
+.main-navigation li ul li { border-top: 0; }
+
+ul ul ul {
+  left: 100%;
+  top: 0;
+  padding: 0;
+}
+
+
 h1{
   font-family: 'Rajdhani', sans-serif;
   margin-top: 100px;
   text-align: center;
   font-size: 9rem;
   color: #333333;
+}
+h3 {
+  text-align: center;
 }
 body {
   background-image: url(https://img.theculturetrip.com/768x432/wp-content/uploads/2018/02/36407068135_784f367b37_k.jpg);

@@ -47,7 +47,7 @@ class MusicianShowContainer extends Component {
     }
 
       return(
-        <div>
+        <div className="show-tile">
         {musician}
         </div>
     )
