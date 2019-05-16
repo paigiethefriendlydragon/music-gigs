@@ -1,27 +1,37 @@
 .menu{
-    margin-left: 20rem;
-    margin-right: 5rem;
+
 }
 .main-navigation ul{
 text-align: center;
 align-items: center;
 margin-left:auto;
 margin-right: auto;
+margin-bottom: 2em;
+}
+.main-navigation ul li{
+  display: inline-block;
+  margin-bottom:  2rem;
+  margin-top: auto;
+  text-align: center;
+
+}
+
+.type {
+  font-size: 1.5em;
+  display: block;
 }
 
 ul {
   list-style: none;
-  padding: 0;
+  padding: 1;
   margin-left:auto;
   margin-right: auto;
-  background: #1bc2a2;
+  margin-top: auto;
 }
 
-ul li {
-  display: block;
-  position: relative;
-  float: left;
-  background: #1bc2a2;
+ ul li {
+   margin-bottom: 2rem;
+   text-align: center;
 }
 
 li ul { display: none; }
@@ -34,25 +44,27 @@ ul li a {
   color: #fff;
 }
 
-ul li a:hover { background: #2c3e50; }
+ul li a/*:hover*/ { background: #2c3e50; }
 
-li:hover > ul {
+li/*:hover*/ > ul {
   display: block;
   position: absolute;
 }
 
-li:hover li { float: none; }
+li/*:hover*/ li { float: none; }
 
-li:hover a { background: #1bc2a2; }
+li/*:hover*/ a { background: #1bc2a2; }
 
-li:hover li a:hover { background: #2c3e50; }
+li/*:hover*/ li a:hover { background: #2c3e50; }
 
 .main-navigation li ul li { border-top: 0; }
 
-ul ul ul {
-  left: 100%;
+
+ul ul ul ul {
   top: 0;
   padding: 0;
+  display: inline-block;
+  margin-top: auto;
 }
 
 
