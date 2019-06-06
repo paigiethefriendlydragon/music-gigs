@@ -1,0 +1,136 @@
+.dropdown:focus #dropdown-content,
+.dropdown:focus-within #dropdown-content,
+.dropdown:hover #dropdown-content { display: block; z-index: 1;
+  transform: translateY(2%);
+  transition-delay: 0s, 0s, 0.3s;
+}
+
+
+#dropdown-content p a:hover {background-color: #ddd;   display: block;
+}
+
+.dropdown {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: auto;
+}
+
+#dropdown-content{
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transform: translateY(-2em);
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+#individual-instrument{
+  align-items: left;
+  font-family: 'Neucha';
+  margin-top: 100px;
+  text-align: center;
+  font-size: 6rem;
+  color: #B5B5B5;
+  text-shadow: 5px 5px 5px black;
+  margin-bottom: 10%;
+
+}
+#instrument{
+  display: block;
+  align-items: right;
+  width: 9rem;
+  height: 3rem;
+  margin-bottom: 10%;
+
+}
+#title.text-center{
+  align-items: center;
+  font-family: 'Neucha';
+  margin-top: 100px;
+  text-align: center;
+  font-size: 6rem;
+  color: #B5B5B5;
+  text-shadow: 5px 5px 5px black;
+  margin-bottom: 10%;
+
+}
+
+#brass{
+  display: inline-block;
+  color: black;
+  font-family: 'Neucha';
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #7B7B7B;
+  opacity: .9;
+  text-shadow: .5px .5px .5px grey;
+}
+#strings{
+  display: inline-block;
+  color: black;
+  font-family: 'Neucha';
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #7B7B7B;
+  opacity: .9;
+  text-shadow: .5px .5px .5px grey;
+}
+#guitar{
+  display: inline-block;
+  color: black;
+  font-family: 'Neucha';
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #7B7B7B;
+  opacity: .9;
+  text-shadow: .5px .5px .5px grey;
+}
+#woodwinds{
+  color: black;
+  font-family: 'Neucha';
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #7B7B7B;
+  opacity: .9;
+  text-shadow: .5px .5px .5px grey;
+  display: inline-block;
+}
+#percussion{
+  display: inline-block;
+  color: black;
+  font-family: 'Neucha';
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #7B7B7B;
+  opacity: .9;
+  text-shadow: .5px .5px .5px grey;
+}
+
+#menu{
+  align-items: center;
+  margin-left: 5%;
+}
+
+.panel.callout p a{
+  color: black !important;
+  font-family: 'Neucha';
+  font-weight: bold;
+  font-size: 2rem;
+  text-shadow: .5px .5px .5px grey;
+
+}
+.panel.callout{
+  background-color: #7B7B7B;
+  border-color: #7B7B7B;
+  opacity: .8;
+  width: 15rem;
+  text-align: center;
+  border-radius: .1rem;
+}
