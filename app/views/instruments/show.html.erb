@@ -1,0 +1,15 @@
+<h1 id="individual-instrument" class="text-center"><%= @instrument.name %></h1>
+  <div class="column panel callout small-9 small-centered">
+    <%User.all.each do |user|%>
+      <%user.instruments.each do |piece|%>
+        <%if piece.name === "#{@instrument.name}" %>
+        <div class="user-tab">
+            <p><%=user.first_name %></p>
+            <p><%=user.last_name%></p>
+            <p><%=user.description%></p>
+            <img src="#{user.profile_photo.url}"</img>
+          </div>
+        <%end%>
+      <%end%>
+    <%end%>
+  </div>

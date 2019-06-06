@@ -3,6 +3,8 @@ class GigController < ApplicationController
   def index
     @users = User.all
     @user_sample = @users.sample(1)
+    @instruments = Instrument.all
+    @instrument_join = InstrumentJoin.all
     @instrument_list = {brass:
                           ["Trumpet",
                           "Cornet",
@@ -62,7 +64,6 @@ class GigController < ApplicationController
                           ],
 
                           percussion: [
-                            "ashiko",
                             "bass drum",
                             "bongo drum",
                             "castanet",
@@ -79,16 +80,9 @@ class GigController < ApplicationController
                             "glockenspiel"
                           ]
                         }
-
-
-        # @genres = [ {rock:
-        #               "alternative",
-        #               "metal",
-        #               "indie rock",
-        #               "punk",
-        #               "hard rock"},
-        #              ]
-
-
+          end
+          def show
+            @users = Users.all
+            @user = User.find(params[:id])
         end
       end
