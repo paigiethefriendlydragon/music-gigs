@@ -1,0 +1,24 @@
+.name-tile{
+  text-align: left;
+  font-family: 'Neucha';
+  text-shadow: 2px 2px 2px black;
+  font-size: 2rem;
+  margin-bottom: .3rem;
+}
+
+.image-tile{
+  float:left;
+  width: 8rem;
+  height: 8rem;
+  margin-right: 5%;
+}
+#list-page{
+  width: 40rem;
+  height: 11rem;
+}
+.description-tile{
+  text-align: left;
+}
+#description-tile{
+  color: black;
+}

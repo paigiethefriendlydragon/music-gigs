@@ -36,27 +36,49 @@ margin-top: auto;
 text-align: center;
 }
 
-#gig{
-  display: block;
-  align-items: left;
-  width: 9rem;
-  height: 3rem;
-  margin-left: 8%;
-}
 
 h1{
-  font-size: 9rem;
+  font-size: 1rem;
   color: #901E0C;
   line-height: 20px;
+  align-items: center;
+
 }
 
 #home{
   font-family: 'Neucha';
-  margin-top: 100px;
+  margin-top: 25%;
+  margin-bottom: 25%;
   text-align: center;
-  font-size: 9rem;
+  font-size: 20rem;
   color: #B5B5B5;
   text-shadow: 7px 7px 7px black;
+  display: block;
+}
+
+.main-nav{
+  text-align: center;
+}
+
+#choose{
+  font-family: 'Neucha';
+  color: white;
+  text-align: center;
+  text-shadow: 7px 7px 7px black;
+  font-size: 7rem;
+}
+
+#home-page-navigation{
+    text-align: center;
+    width: 13em;
+    height: 5em;
+    display: inline-block;
+}
+
+#home-page-navigation h1 a{
+  font-family: 'Neucha';
+  color: black;
+  font-size: 2em
 }
 
 h3 {
