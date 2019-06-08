@@ -5,7 +5,7 @@
         <%if piece.name === "#{@instrument.name}" %>
         <div class="user-tab">
             <img class="image-tile" src="<%=user.profile_photo.url%>"</img>
-            <p class="name-tile"><%=user.first_name%> <%=user.last_name %></p>
+            <p class="name-tile"><%= link_to user.first_name, user_path(user)%> <%= link_to user.last_name, user_path(user) %></p>
             <p id="description-tile" class="description-tile"><%=user.description%></p>
           </div>
         <%end%>
