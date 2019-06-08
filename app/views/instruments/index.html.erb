@@ -49,25 +49,13 @@
 </div>
 
 <div class="dropdown">
-<p id="percussion" class="column panel callout small-9 small-centered">Percussion</p>
-<%@instruments.each do |instrument| %>
-<%if instrument.instrument_type === 'percussion' %>
-<div  id="dropdown-content" class="column panel callout small-9 small-centered">
-  <p><%= link_to instrument.name, instrument_path(instrument)%></p>
+  <p id="percussion" class="column panel callout small-9 small-centered">Percussion</p>
+  <%@instruments.each do |instrument| %>
+  <%if instrument.instrument_type === 'percussion' %>
+    <div  id="dropdown-content" class="column panel callout small-9 small-centered">
+      <p><%= link_to instrument.name, instrument_path(instrument)%></p>
+    </div>
+  <%end%>
+  <%end%>
 </div>
-<%end%>
-<%end%>
 </div>
-</div>
-
-
-
-
-<!-- <div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div> -->
