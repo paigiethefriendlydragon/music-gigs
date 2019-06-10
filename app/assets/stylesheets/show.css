@@ -1,103 +1,140 @@
 
-.column {
-  float: left;
-}
-.column.side {
-  width: 50%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+#page{
+  background-color: #181818;
+  min-height: 100%;
 }
 
 #pic {
+  margin-left: 1%;
   width: 30rem;
   height: 20rem;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 3%;
 }
-.right-side{
-  float: right;
 
-}
- #name p {
-  align-items: left;
-  float: left;
-  font-size: 2rem;
+#picture{
   width: 30rem;
-  height: 5rem;
-  background-color: #8C79A6;
-  opacity: 0.8;
+  height: 25rem;
 }
 
-#name {
-
-  height: 7rem;
-  width: 20rem;
+#name{
   color: white;
+  margin-left: 1%;
+  width: 30rem;
+  height: 7rem;
+  display: inline-block;
+  margin-bottom: 6%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#name p{
+  font-size: 5.5rem;
+  text-align: center;
+  font-family: 'Neucha';
+}
 
+#description{
+  margin-left: 1%;
+  color: white;
+  background-color: #525252;
+  width: 30rem;
+  height: 15rem;
+  margin-bottom: 3%;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: .01em 1em 5em .2em;
 }
 
 #description p{
-  font-size: 1rem;
-  width: 30rem;
-  height: 5rem;
-  color: white;
-  background-color: #8C79A6;
-  opacity: 0.8;
-}
-
-#rate {
-  align-items: center;
-  font-size: 16px;
-  width: 5rem;
-  height: 5rem;
-  background-color: #8C79A6;
-  opacity: 0.8;
-  color: white;
+  font-size: 1.3rem;
   text-align: center;
-  font-size: 2rem;
+  font-weight: bold;
 }
 
-#link {
-  align-items: right;
-  font-size: 2rem;
+#rate{
+  color: white;
+  background-color: #525252;
   width: 30rem;
   height: 5rem;
-  background-color: #ECFAFF;
-  color: white;
+  margin-bottom: 3%;
+  display: inline-block;
+}
 
+#rate p{
+  font-size: 2rem;
 }
 
 #gigRate{
-  text-align: center;
-  font-size: 16px;
-  width: 5rem;
-  height: 5rem;
-  background-color: #8C79A6;
-  opacity: 0.8;
-  color: white;
-  margin: 0
+  color: black;
+  background-color: #525252;
+}
 
+#gigRate p{
+  font-size: 3rem;
 }
 
 #youtube{
-    align-items: center;
-    font-size: 2rem;
-    width: 30rem;
-    height: 5rem;
-    background-color: #8C79A6;
-    opacity: 0.8;
-    color: white;
-  }
+  color: white;
+  background-color: #525252;
+  width: 60rem;
+  height: 27rem;
+  display: inline-block;
+  text-align: center;
+  margin-left: 3%;
+  margin-right: 1%;
+  margin-bottom: 3%;
+  box-shadow: .01em 1em 5em .2em;
+}
+
+#youtube p{
+  font-size: 2rem;
+  font-family: 'Neucha';
+}
+
+#youtube-frame{
+  width: 50rem;
+  height: 20rem;
+}
 
 #soundcloud{
-  align-items: center;
-  font-size: 2rem;
-  width: 30rem;
-  height: 5rem;
-  background-color: #8C79A6;
-  opacity: 0.8;
   color: white;
+  background-color: #525252;
+  width: 60rem;
+  height: 27rem;
+  display: inline-block;
+  margin-left: 3%;
+}
 
+#soundcloud p{
+  font-size: 2rem;
+  font-family: 'Neucha';
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#soundcloud-frame{
+  width: 50rem;
+  height: 20rem;
+}
+
+#request{
+  height: 9rem;
+  width: 30rem;
+  background-color: #525252;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+  box-shadow: .1em .1em 5em .3em white;
+  border-radius: 1.5rem;
+}
+
+#request p{
+  color: white;
+  padding-top: 1.3rem;
+  font-family: 'Neucha';
+  font-size: 4rem;
+  text-align: center;
+  align-items: center;
 }

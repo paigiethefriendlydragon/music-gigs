@@ -14,6 +14,15 @@ class UsersController < Devise::RegistrationsController
     @instruments = Instrument.all
   end
 
+  def create
+    @user = User.new
+  end
+
+  def edit
+    @user = User.find(params[:id])
+    @users = User.all
+  end
+
 
   private
 
