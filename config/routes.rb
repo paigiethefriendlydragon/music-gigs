@@ -3,12 +3,12 @@ Rails.application.routes.draw do
   devise_for :users, skip: :all
   devise_scope :user do
     devise_scope :user do
-    get   '/users/sign_in'  => 'devise/sessions#new',  as: :new_user_session
-    delete '/users/sign_out' => 'custom_devise/sessions#destroy', as: :destroy_user_session
-
-    post  '/users/password'  => 'custom_devise/passwords#create', as: :user_password
-    put   '/users/password'  => 'custom_devise/passwords#update', as: nil
-    patch '/users/password'  => 'custom_devise/passwords#update', as: nil
+    get  '/users/sign_in'  => 'devise/sessions#new', as: :user_session
+    post   '/users/sign_in'  => 'devise/sessions#create', as: :new_user_session
+    delete '/users/sign_out' => 'devise/sessions#destroy', as: :destroy_user_session
+    # post  '/users/password'  => 'devise/passwords#create', as: :user_password
+    # put   '/users/password'  => 'devise/passwords#update', as: nil
+    patch '/users/password'  => 'devise/passwords#update', as: :new_password
      get  '/users/sign_up' =>   'devise/registrations#new', as: :new_user_registration
      get '/users/edit' =>  'devise/registrations#edit', as: :edit_user_registration
      patch '/users' =>  'devise/registrations#update', as: :user_registration
@@ -16,13 +16,10 @@ Rails.application.routes.draw do
      delete '/users' => 'devise/registrations#destroy'
      post '/users'=> 'devise/registrations#create'
      get '/users/:id'  => 'users#show', as: :user
-     # get '/instruments/:id' => 'instruments#show'
-end
+    end
   end
-    #devise_for :users, :controllers => { :registrations => 'users', :show => 'users/:id'}
 
   resources :gig, only: [:index, :show]
-  # resources :users, only: [:index, :new, :show, :create]
   resources :instruments, only: [:index, :new, :show, :create]
 
   namespace :api do
